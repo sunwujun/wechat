@@ -1,5 +1,8 @@
 import 'package:app/common/style/colors.dart';
+import 'package:app/page/login_register/register/register.dart';
 import 'package:flutter/material.dart';
+
+import 'login/mobile/mobileLogin.dart';
 
 class WelcomePage extends StatefulWidget {
   @override
@@ -36,6 +39,9 @@ class _WelcomeState extends State<WelcomePage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0)),
                   onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) {
+                      return MobileLoginPage();
+                    }));
                   },
                 ),
               ),
@@ -53,6 +59,9 @@ class _WelcomeState extends State<WelcomePage> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0)),
                   onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) {
+                      return RegisterPage();
+                    }));
                   },
                 ),
               )

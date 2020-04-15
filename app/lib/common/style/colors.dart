@@ -33,4 +33,7 @@ class AppColors {
 
   //  挂断按钮
   static Color btnHangUp = Color.fromARGB(255, 218, 74, 74);
+
+  //  禁止按钮
+  static Color disabledButton = Color.fromARGB(255, 225, 225, 225);
 }

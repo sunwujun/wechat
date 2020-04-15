@@ -1,0 +1,11 @@
+server:
+  port: 8000
+  read-timeout: 60
+  write-timeout: 60
+  run-mode: debug
+
+mysql:
+  url: "127.0.0.1:3306"
+  username: root
+  password: admin
+  dbname: wechat

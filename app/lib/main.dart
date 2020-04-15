@@ -10,8 +10,8 @@ import 'routers/application.dart';
 import 'routers/routers.dart';
 
 void main() {
+  runApp(MyApp());
   if (Platform.isAndroid) {
-    runApp(MyApp());
     var style = SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light);

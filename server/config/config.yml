@@ -9,3 +9,12 @@ mysql:
   username: root
   password: admin
   dbname: wechat
+
+redis:
+  addrs:
+    - "127.0.0.1:6379"
+  pwd:
+  poolsize: 1000
+  db: 1
+  timeout: 1000
+  expired-time: 3600

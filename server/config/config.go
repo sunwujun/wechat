@@ -12,6 +12,7 @@ var Conf *Config
 type Config struct {
 	Server   Server `yaml:"server"`
 	Database MySQL  `yaml:"mysql"`
+	Redis    Redis  `yaml:"redis"`
 }
 
 //Server yaml config
@@ -30,6 +31,16 @@ type MySQL struct {
 	Dbname   string `yaml:"dbname"`
 }
 
+//Redis yaml config
+type Redis struct {
+	Addrs       []string      `yaml:"addrs"`
+	Pwd         string        `yaml:"pwd"`
+	PoolSize    int           `yaml:"poolsize"`
+	DB          int           `yaml:"db"`
+	Timeout     time.Duration `yaml:"timeout"`
+	ExpiredTime int           `yaml:"expired-time"`
+}
+
 func init() {
 	Conf = getYamlConfig()
 	log.Println("[Setting] Config init success")
@@ -39,11 +50,11 @@ func getYamlConfig() *Config {
 	var c *Config
 	file, err := ioutil.ReadFile("config/config.yml")
 	if err != nil {
-		log.Printf("[Setting] config error:%s \n", err.Error())
+		log.Printf("[Setting] config e:%s \n", err.Error())
 	}
 
 	if err := yaml.UnmarshalStrict(file, &c); err != nil {
-		log.Printf("[Setting] yaml unmarshal error: %s \n", err.Error())
+		log.Printf("[Setting] yaml unmarshal e: %s \n", err.Error())
 	}
 	return c
 }

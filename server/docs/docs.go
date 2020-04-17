@@ -18,16 +18,8 @@ var doc = `{
     "info": {
         "description": "{{.Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "https://razeen.me",
-        "contact": {
-            "name": "Razeen",
-            "url": "https://razeen.me",
-            "email": "me@razeen.me"
-        },
-        "license": {
-            "name": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-        },
+        "contact": {},
+        "license": {},
         "version": "{{.Version}}"
     },
     "host": "{{.Host}}",
@@ -119,8 +111,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "127.0.0.1:8000",
 	BasePath:    "/apis/v1",
 	Schemes:     []string{},
-	Title:       "Swagger Example API",
-	Description: "This is a sample server celler server.",
+	Title:       "微信",
+	Description: "后端接口",
 }
 
 type s struct{}

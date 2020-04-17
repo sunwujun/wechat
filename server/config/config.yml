@@ -18,3 +18,6 @@ redis:
   db: 1
   timeout: 1000
   expired-time: 3600
+
+keys:
+  encryptkey: "ijoyNTg3MjE4NjI5"

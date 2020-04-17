@@ -13,6 +13,7 @@ type Config struct {
 	Server   Server `yaml:"server"`
 	Database MySQL  `yaml:"mysql"`
 	Redis    Redis  `yaml:"redis"`
+	Keys     Keys   `yaml:"keys"`
 }
 
 //Server yaml config
@@ -39,6 +40,10 @@ type Redis struct {
 	DB          int           `yaml:"db"`
 	Timeout     time.Duration `yaml:"timeout"`
 	ExpiredTime int           `yaml:"expired-time"`
+}
+
+type Keys struct {
+	Encryptkey string `yaml:"encryptkey"`
 }
 
 func init() {

@@ -10,18 +10,9 @@ import (
 	"wechat/routers"
 )
 
-// @title Swagger Example API
+// @title 微信
 // @version 1.0
-// @description This is a sample server celler server.
-// @termsOfService https://razeen.me
-
-// @contact.name Razeen
-// @contact.url https://razeen.me
-// @contact.email me@razeen.me
-
-// @license.name Apache 2.0
-// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
-
+// @description 后端接口
 // @host 127.0.0.1:8000
 // @BasePath /apis/v1
 

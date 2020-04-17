@@ -25,16 +25,10 @@ definitions:
     type: object
 host: 127.0.0.1:8000
 info:
-  contact:
-    email: me@razeen.me
-    name: Razeen
-    url: https://razeen.me
-  description: This is a sample server celler server.
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: https://razeen.me
-  title: Swagger Example API
+  contact: {}
+  description: 后端接口
+  license: {}
+  title: 微信
   version: "1.0"
 paths:
   /phone_login:
